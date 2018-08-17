@@ -30,3 +30,12 @@ print("Financial Analysis" + "\n"
 + "Average Change:" + str(round(AV,2)) + "\n" 
 + "Greatest Increase in Profits: " + dm + " ($" + str(Mp) +")" + "\n" 
 + "Greatest Decrease in Profits: "+ dn + " ($" + str(Np) + ")")
+file = open('main.txt', 'w')
+file.write("Financial Analysis" + "\n" 
++ "----------------------------" + "\n" 
++ "Total Months: " + str(Tm) + "\n" 
++ "Total: " + str(T) + "\n" 
++ "Average Change:" + str(round(AV,2)) + "\n" 
++ "Greatest Increase in Profits: " + dm + " ($" + str(Mp) +")" + "\n" 
++ "Greatest Decrease in Profits: "+ dn + " ($" + str(Np) + ")")
+file.close
