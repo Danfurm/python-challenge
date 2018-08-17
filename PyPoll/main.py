@@ -31,5 +31,14 @@ ind = cv.index(mv)
 print("-------------------------" + "\n"
 + "Winner: " + candidates[ind] + "\n"
 +"-------------------------")
-
-
+file = open('main.txt', 'w')
+file.write("Election Results" + "\n"
++ "-------------------------" + "\n"
++ "Total Votes: " + str(TV) + "\n"
+"-------------------------" + "\n")
+for i in range(len(candidates)):
+    file.write(str(candidates[i]) + ": " + str(pc[i]) + " (" + str(cv[i]) + ")" + "\n")
+file.write("-------------------------" + "\n"
++ "Winner: " + candidates[ind] + "\n"
++"-------------------------")
+file.close
