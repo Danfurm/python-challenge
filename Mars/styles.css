@@ -1,0 +1,12 @@
+.bold {
+  font-weight: bold !important;
+}
+
+.row {
+  padding: 10px;
+}
+
+.holder {
+  padding: 20px;
+  outline: 1px solid;
+}
